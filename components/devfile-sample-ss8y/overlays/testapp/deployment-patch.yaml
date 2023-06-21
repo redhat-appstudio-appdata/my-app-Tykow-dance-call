@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ss8y
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rh-ee-sombaner-tenant/my-app/devfile-sample-ss8y@sha256:6d944f152dd4338f08e6ff343a6f3c2f05e8e2ebc8a29988860afdfcdfb7dbce
+        name: my-nodejs
+        resources: {}
+status: {}
